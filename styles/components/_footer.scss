@@ -1,4 +1,29 @@
 footer {
-    background: black;
-    width: 100%;
+    background-color: #1a1a1a;
+}
+
+.contact {
+    .wrapper {
+        background-color: $contactBanner;
+        display: flex;
+        justify-content: space-between;
+        padding:10px;
+        box-shadow: 0 24px 0 -9px #403f3f;
+    }
+    .contact-item img, p {
+        display: inline-block;
+    }
+}
+
+.wrapper.foot {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-item {
+    width:30%;
+    margin-top:75px;
+    h2 {
+        color:white;
+    }
 }

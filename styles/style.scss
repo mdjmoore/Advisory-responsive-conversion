@@ -1,6 +1,342 @@
-@import "components/header";
-@import "components/footer";
+$secondaryBlue: #1c69d5;
+$iconGrey: #767676;
+$fontGrey:#4b4b4b;
+$softBlack: #222222;
+$contactBanner: #2e2c2c;
+$backgroundGrey: #f5f5f5;
+$mainBlue: #197dff;
+
+@import 'components/_normalize.scss';
+@import 'components/_typography.scss';
+@import 'components/_header.scss';
+@import 'components/_footer.scss';
+
 
 body {
-    background: red;
+    width: 100%;
 }
+
+a {
+    text-decoration: none;
+}
+
+.blue {
+    color:$mainBlue;
+}
+
+.wrapper {
+    max-width:1170px;
+    margin:0 auto;
+    clear: both;
+}
+
+.weHelp {
+    background-image: url(../assets/Ellipse.png);
+    background-repeat: no-repeat;
+    background-position: 0 50px;
+    padding:50px 0 100px 0;
+    h3 {
+        color:$mainBlue;
+    }
+    h2 {
+        color:black;
+    }
+}
+
+.weHelp-main,
+.weHelp aside {
+    float: left;
+}
+
+.weHelp-main {
+    width:calc(75% - 43px);
+    margin-right:43px;
+}
+
+.weHelp aside {
+    width:calc(25% - 43px);
+    margin-left:43px;
+    background: $backgroundGrey;
+    border-right:1px solid $mainBlue;
+    padding:40px;
+    i,
+    p:last-of-type {
+        color:$mainBlue;
+    }
+}
+
+button  {
+    background-color: $mainBlue;
+    border:none;
+    width:215px;
+    height: 50px;
+    letter-spacing: 2px;
+}
+
+button a {
+    color:white;
+    font-weight: 300;
+}
+
+#services {
+    background: $backgroundGrey url(../assets/ellipses2.png) bottom right no-repeat;
+    clear: both;
+    padding-top:100px;
+    margin-bottom:100px;
+}
+
+.heading {
+    border:1px solid red;
+    text-align: center;
+    height:200px;
+    padding-top:0;
+}
+
+.service.heading {
+    background: url(../assets/S.png) no-repeat;
+    background-position: center;
+    position: relative;
+    hr {
+        position: absolute;
+        width: 50px;
+        left:48%;
+        bottom:30px;
+        color:$mainBlue;
+    }
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.gallery-box {
+    width:calc(35% - 30px);
+    background: white;
+    margin-bottom:15px;
+    text-align: center;
+    padding:55px 45px 55px 45px;
+    p {
+        line-height:40px;
+    }
+}
+
+.choose-words,
+.choose img {
+    float: left;
+}
+
+.choose img {
+    max-width: calc(40% - 36px);
+    margin-left:36px;
+    display: block;
+}
+
+.choose-words {
+    max-width: 60%;
+    position: relative;
+    h2 {
+        color:black;
+    }
+    h4 {
+        color:$mainBlue;
+    }
+    hr {
+        color:$mainBlue;
+        width:50px;
+        position: absolute;
+        top:80px;
+    }
+}
+
+.jobs {
+    margin:100px 0;
+    .wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+}
+.jobs,
+.job-box p {
+    clear: both;
+}
+
+.job-box {
+    width:30%;
+    border:1px solid $backgroundGrey;
+    padding:20px;
+}
+
+.job-box:nth-of-type(2) {
+    border-left:1px solid $mainBlue;
+}
+
+.job-box img,
+.job-box h6 {
+    float:left;
+    margin-top:20px;
+    margin-right:10px;
+}
+
+.history {
+    background:$softBlack;
+    padding:0 150px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom:100px;
+}
+
+.history-box {
+    width:20%;
+    border-right:1px solid #2b3c52;
+    img {
+        margin-top:50px;
+    }
+}
+
+.history-box:nth-child(4) {
+    border-right: none;
+}
+
+
+.project.heading {
+    background: url(../assets/P.png) no-repeat;
+    background-position: center;
+    position: relative;
+    hr {
+        color:$mainBlue;
+        width:50px;
+        position: absolute;
+        left:48%;
+        top:130px;
+    }
+}
+
+.latestProject p:first-of-type {
+    width:75%;
+    float: left;
+}
+
+.more {
+    width:25%;
+    float: left;
+}
+
+.project-gallery {
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom:170px;
+    margin-top:65px;
+}
+
+.gallery-item {
+    width:32%;
+}
+
+.gallery-item img {
+    width: 100%;
+}
+
+.testimonial {
+    background-color: $mainBlue;
+    padding:100px 0;
+}
+
+.testimonial .wrapper {
+    display: flex;
+    justify-content: space-between;
+    .testimonial-words {
+        width:50%;
+        text-align: center;
+        font-size: 2.1rem;
+        p {
+            color:white;
+            margin-bottom:40px;
+        }
+        .small {
+            font-size: 1.2rem;
+        }
+        hr {
+            color:white;
+            width: 50px;
+        }
+    }
+}
+
+.slider-box {
+    margin-top:50px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.slider {
+    width:25px;
+    height:15px;
+    background-color: #2372e0;
+    border-radius: 10px;
+    margin:5px;
+}
+
+.blog.heading {
+    background: url(../assets/B.png) no-repeat;
+    background-position: center;
+    position: relative;
+    hr {
+        width:50px;
+        color:$mainBlue;
+        position: absolute;
+        left:48%;
+        top:130px;
+    }
+}
+
+.blog-words {
+    border:1px solid green;
+    width:70%;
+    float: left;
+}
+
+.blog-words .more {
+    width:30%;
+}
+
+.blog-gallery {
+    clear: both;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.blog-item {
+    width:33%;
+}
+
+.blog-item img {
+    width:100%;
+}
+
+.partnerLogo {
+    background: $mainBlue;
+    padding:50px 0;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        img {
+            width:20%;
+            max-height:30px;
+        }
+    }
+}
+
+
+
+

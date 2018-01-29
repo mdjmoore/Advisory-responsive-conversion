@@ -1,0 +1,72 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+h1 {
+    color:white;
+    font-size: 7.1rem;
+} 
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 3rem;
+    color:$mainBlue;
+    margin-bottom:50px;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
+aside h3,
+h4,
+h6 {
+    font-size: 1.8rem;
+}
+
+h4,
+.latestProject,
+.testimonial,
+.blog-words,
+.contact,
+.pop {
+    font-family: 'Poppins', sans-serif;
+}
+
+header, 
+h5,
+.copyright {
+    font-family:'Source Sans Pro', sans-serif;
+    font-size: 2.2rem;
+}
+
+a {
+   font-family: 'Source Sans Pro', sans-serif; 
+   color:$fontGrey;
+}
+
+p {
+    color:$fontGrey;
+    font-family:'Source Sans Pro', sans-serif;  
+}
+
+.history-box h5 {
+    color:white;
+    font-weight: 300;
+}
+
+.history-box p {
+    font-family:'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+    color:$mainBlue; 
+}
+
+
