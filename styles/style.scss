@@ -65,7 +65,7 @@ a {
     }
 }
 
-button  {
+button.help  {
     background-color: $mainBlue;
     border:none;
     width:215px;
@@ -246,6 +246,7 @@ button a {
 .testimonial {
     background-color: $mainBlue;
     padding:100px 0;
+    margin-bottom:100px;
 }
 
 .testimonial .wrapper {
@@ -313,14 +314,44 @@ button a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin:150px 0;
 }
 
 .blog-item {
-    width:33%;
+    width:32%;
+    position: relative;
+    h4 {
+        color:$mainBlue;
+    }
+    p {
+        font-size: 1.6rem;
+    }
 }
 
 .blog-item img {
     width:100%;
+    display: block;
+}
+
+.overlay {
+    display: none;
+    position: absolute;
+    top: 0;
+    bottom: 198px;
+    right: 0;
+    left: 0;
+    background: rgba(25,125,255,0.7);
+    padding: 20px;
+    i {
+        font-size: 4rem;
+        color:white;
+        padding:25% 42%;
+    }
+
+}
+
+.blog-item:hover .overlay {
+    display: block;
 }
 
 .partnerLogo {

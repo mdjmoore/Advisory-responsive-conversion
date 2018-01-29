@@ -1,29 +1,102 @@
 footer {
     background-color: #1a1a1a;
+    position: relative;
 }
 
 .contact {
+    width:100%;
+    position: absolute;
+    top:-40px;
+    left:0;
     .wrapper {
         background-color: $contactBanner;
         display: flex;
         justify-content: space-between;
-        padding:10px;
-        box-shadow: 0 24px 0 -9px #403f3f;
+        padding:10px 50px;
+        box-shadow: 0 35px 0 -15px #403f3f;
     }
-    .contact-item img, p {
+    .contact-item img, p, a {
         display: inline-block;
+        color:white;
     }
+}
+
+.contact-item p, 
+.contact-item a {
+    margin-top:20px;
+    margin-left:20px;
 }
 
 .wrapper.foot {
     display: flex;
     justify-content: space-between;
+    border-bottom:1px solid $iconGrey;
+    padding-bottom:50px;
 }
 
 .footer-item {
+    line-height: 30px;
+    color: #b1afaf;
     width:30%;
     margin-top:75px;
     h2 {
         color:white;
+    }
+    ul {
+        list-style: none;
+        padding:0;
+    }
+}
+
+.footer-item .advisory-logo {
+    img {
+        float: left;
+    }
+    h2 {
+        float: left;
+        margin:5px 15px;
+    }
+    p {
+        margin-left:55px;
+    }
+}
+
+input[type ="email"] {
+    position: relative;
+    background-color: #2e2c2c;
+    border:none;
+    padding:10px 40px;
+    color:white;
+}
+
+button.plane {
+    position: absolute;
+    color:white;
+    left:320px;
+    background: $mainBlue;
+    border:none;
+    padding:10px 30px;
+    border-radius: 15px;
+}
+
+.footer-item:nth-of-type(2) {
+    margin-left:100px;
+}
+
+footer .wrapper.bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    flex-direction: row;
+    .copyright {
+        font-size: 1.6rem;
+    }
+}
+
+.bottom .social {
+    margin-top:20px;
+    color:$iconGrey;
+    i {
+        margin-left:10px;
     }
 }

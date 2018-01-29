@@ -246,7 +246,7 @@ nav li a:focus .sub-menu {
   align-items: center; }
 
 .advisory-logo {
-  width: 200px; }
+  width: 250px; }
 
 .mainOffice,
 .openTime {
@@ -330,7 +330,7 @@ nav li a:focus .sub-menu {
 .arrowRight {
   right: 30px; }
 
-.hero button {
+.hero .expert {
   background-color: #197dff;
   border: none;
   width: 215px;
@@ -343,22 +343,33 @@ nav li a:focus .sub-menu {
   font-weight: 300; }
 
 footer {
-  background-color: #1a1a1a; }
+  background-color: #1a1a1a;
+  position: relative; }
 
-.contact .wrapper {
-  background-color: #2e2c2c;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  padding: 10px;
-  -webkit-box-shadow: 0 24px 0 -9px #403f3f;
-  box-shadow: 0 24px 0 -9px #403f3f; }
+.contact {
+  width: 100%;
+  position: absolute;
+  top: -40px;
+  left: 0; }
+  .contact .wrapper {
+    background-color: #2e2c2c;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 10px 50px;
+    -webkit-box-shadow: 0 35px 0 -15px #403f3f;
+    box-shadow: 0 35px 0 -15px #403f3f; }
+  .contact .contact-item img, .contact p, .contact a {
+    display: inline-block;
+    color: white; }
 
-.contact .contact-item img, .contact p {
-  display: inline-block; }
+.contact-item p,
+.contact-item a {
+  margin-top: 20px;
+  margin-left: 20px; }
 
 .wrapper.foot {
   display: -webkit-box;
@@ -366,13 +377,71 @@ footer {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  border-bottom: 1px solid #767676;
+  padding-bottom: 50px; }
 
 .footer-item {
+  line-height: 30px;
+  color: #b1afaf;
   width: 30%;
   margin-top: 75px; }
   .footer-item h2 {
     color: white; }
+  .footer-item ul {
+    list-style: none;
+    padding: 0; }
+
+.footer-item .advisory-logo img {
+  float: left; }
+
+.footer-item .advisory-logo h2 {
+  float: left;
+  margin: 5px 15px; }
+
+.footer-item .advisory-logo p {
+  margin-left: 55px; }
+
+input[type="email"] {
+  position: relative;
+  background-color: #2e2c2c;
+  border: none;
+  padding: 10px 40px;
+  color: white; }
+
+button.plane {
+  position: absolute;
+  color: white;
+  left: 320px;
+  background: #197dff;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 15px; }
+
+.footer-item:nth-of-type(2) {
+  margin-left: 100px; }
+
+footer .wrapper.bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row; }
+  footer .wrapper.bottom .copyright {
+    font-size: 1.6rem; }
+
+.bottom .social {
+  margin-top: 20px;
+  color: #767676; }
+  .bottom .social i {
+    margin-left: 10px; }
 
 body {
   width: 100%; }
@@ -416,7 +485,7 @@ a {
   .weHelp aside p:last-of-type {
     color: #197dff; }
 
-button {
+button.help {
   background-color: #197dff;
   border: none;
   width: 215px;
@@ -587,7 +656,8 @@ button a {
 
 .testimonial {
   background-color: #197dff;
-  padding: 100px 0; }
+  padding: 100px 0;
+  margin-bottom: 100px; }
 
 .testimonial .wrapper {
   display: -webkit-box;
@@ -659,13 +729,37 @@ button a {
   flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between; }
+  justify-content: space-between;
+  margin: 150px 0; }
 
 .blog-item {
-  width: 33%; }
+  width: 32%;
+  position: relative; }
+  .blog-item h4 {
+    color: #197dff; }
+  .blog-item p {
+    font-size: 1.6rem; }
 
 .blog-item img {
-  width: 100%; }
+  width: 100%;
+  display: block; }
+
+.overlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  bottom: 198px;
+  right: 0;
+  left: 0;
+  background: rgba(25, 125, 255, 0.7);
+  padding: 20px; }
+  .overlay i {
+    font-size: 4rem;
+    color: white;
+    padding: 25% 42%; }
+
+.blog-item:hover .overlay {
+  display: block; }
 
 .partnerLogo {
   background: #197dff;

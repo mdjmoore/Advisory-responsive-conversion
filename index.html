@@ -121,7 +121,7 @@
             <h1>Advisory Business Consulting Services</h1>
             <p>We offer consulting expertise in the areas of turnaround managemtn, recieverships, and loan restructuring. Our services,
             through corporate renewal and recovery, enable a return to profitability.</p>
-            <button>
+            <button class="expert">
                 <a href="#">
                     <i class="fa fa-long-arrow-right" aria-hidden="true"></i>Meet Our Expert
                 </a>
@@ -146,7 +146,7 @@
                 between yur team and our business consultants, helping to establish an in-depth understanding of your business and technology
                 requirments as the foundation of our assessment process.</p>
                 
-                <button>
+                <button class="help">
                     <a href="#">
                         <i class="fa fa-long-arrow-right" aria-hidden="true"></i>Read More
                     </a>
@@ -273,10 +273,11 @@
                 <hr>
             </div>
             <p>We have done more than 10,000 projects in the short period of time and all the projects are done by our expert team with 100% satisfaction</p>
-            <div class="more">
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                <p>More Project</p>
-            </div>
+            <button class="help">
+                <a href="#">
+                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>Read More
+                </a>
+            </button>
             <div class="project-gallery">
                 <div class="gallery-item">
                     <img src="./assets/desktop-pic.png" alt="Photo of a desktop with a black and white notebook on it and a calendar">
@@ -321,10 +322,11 @@
                 <p>Our most popular rect Blog post. We have done more than 10,000 projects in the short period of time and all the projects
                 are done.</p>
             </div>
-            <div class="more clearfix">
-                <i class="fa fa-long-arrow-right" aria-hidden="true"></i>
-                <p>More News</p>
-            </div>
+            <button class="help">
+                <a href="#">
+                    <i class="fa fa-long-arrow-right" aria-hidden="true"></i>Read More
+                </a>
+            </button>
             
             
             <div class="blog-gallery">
@@ -333,18 +335,27 @@
                     <h4>Consulting Reports Third Quarter 2017 Finanical Results</h4>
                     <p>For the quarter, revenues of $449.0 million increased $10.9 million or 2.5% ......</p>
                     <p class="date blue">November 06, 2017</p>
+                    <div class="overlay">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                    </div>
                 </div>
                 <div class="blog-item">
                     <img src="./assets/blog-desktop.jpg" alt="Photo of a desktop. There is a desktop Mac computer, a macbook and an iphone on the desk">
                     <h4>Accounting, Legal, Engineering, Dental, Architecture ...</h4>
                     <p>For the quarter, revenues of $449.0 million increased $10.9 million or 2.5% ......</p>
                     <p class="date blue">November 06, 2017</p>
+                    <div class="overlay">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                    </div>
                 </div>
                 <div class="blog-item">
                     <img src="./assets/lunch-meeting.jpg" alt="Two workers sit at a table, discussing work. A laptop sits between them.">
                     <h4>When a business can no longer meet the demands of its long/short term</h4>
                     <p>For the quarter, revenues of $449.0 million increased $10.9 million or 2.5% ......</p>
                     <p class="date blue">November 06, 2017</p>
+                    <div class="overlay">
+                        <i class="fa fa-link" aria-hidden="true"></i>
+                    </div>
                 </div>
             </div>
         </div>
@@ -379,7 +390,7 @@
             <div class="wrapper foot">
                 <div class="footer-item">
                     <div class="advisory-logo">
-                        <img src="./assets/icons/advisory-lock.svg" alt="Advisory logo">
+                        <img src="./assets/icons/advisory-lock.svg" alt="Advisory logo clearfix">
                         <h2>Advisor<span class="blue">y</span>
                         </h2>
                         <p>Perfect Business Solution</p>
@@ -389,8 +400,9 @@
                     we can be whether as a trained advisor.</p>
                     <p class="blue pop">Recieve news right in your email</p>
                     <form action="sendEmail.php" method="POST">
-                        <input type="email" name="email" placeholder="Your Email">
-                        <input type="submit" value="\f1d9">
+                        <input type="email" name="email" placeholder="Your email">
+                        <button class="plane"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                        </button>
                     </form>
                 </div>
                 <div class="footer-item">
@@ -438,17 +450,19 @@
                 </div>
             </div>
                 <!-- .footer-item -->
-                <div class="copyright">
-                    <p>Copyright 2017, All Rights Reserved, 360degree</p>
-                </div>
-                <div class="social">
-                    <i class="fa fa-twitter" aria-hidden="true"></i>
-                    <i class="fa fa-facebook" aria-hidden="true"></i>
-                    <i class="fa fa-linkedin" aria-hidden="true"></i>
-                    <i class="fa fa-pinterest-p" aria-hidden="true"></i>
-                    <i class="fa fa-google" aria-hidden="true"></i>
-                    <i class="fa fa-dribbble" aria-hidden="true"></i>
-                    <i class="fa fa-vine" aria-hidden="true"></i>
+                <div class="wrapper bottom">
+                    <div class="copyright">
+                        <p>Copyright 2017, All Rights Reserved, 360degree</p>
+                    </div>
+                    <div class="social">
+                        <i class="fa fa-twitter" aria-hidden="true"></i>
+                        <i class="fa fa-facebook" aria-hidden="true"></i>
+                        <i class="fa fa-linkedin" aria-hidden="true"></i>
+                        <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                        <i class="fa fa-google" aria-hidden="true"></i>
+                        <i class="fa fa-dribbble" aria-hidden="true"></i>
+                        <i class="fa fa-vine" aria-hidden="true"></i>
+                    </div>
                 </div>
             
     </footer>
