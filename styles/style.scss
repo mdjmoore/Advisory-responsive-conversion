@@ -10,6 +10,7 @@ $mainBlue: #197dff;
 @import 'components/_typography.scss';
 @import 'components/_header.scss';
 @import 'components/_footer.scss';
+@import 'components/_mediaqueries.scss';
 
 
 body {
@@ -26,6 +27,7 @@ a {
 
 .wrapper {
     max-width:1170px;
+    width: 90%;
     margin:0 auto;
     clear: both;
 }
@@ -41,6 +43,12 @@ a {
     h2 {
         color:black;
     }
+}
+
+button.help {
+    background: transparent;
+    border:none;
+    color:$mainBlue;
 }
 
 .weHelp-main,
@@ -59,13 +67,9 @@ a {
     background: $backgroundGrey;
     border-right:1px solid $mainBlue;
     padding:40px;
-    i,
-    p:last-of-type {
-        color:$mainBlue;
-    }
 }
 
-button.help  {
+button.readMore  {
     background-color: $mainBlue;
     border:none;
     width:215px;
@@ -78,6 +82,10 @@ button a {
     font-weight: 300;
 }
 
+.help a {
+    color:$mainBlue;
+}
+
 #services {
     background: $backgroundGrey url(../assets/ellipses2.png) bottom right no-repeat;
     clear: both;
@@ -86,7 +94,6 @@ button a {
 }
 
 .heading {
-    border:1px solid red;
     text-align: center;
     height:200px;
     padding-top:0;
@@ -180,6 +187,10 @@ button a {
     margin-right:10px;
 }
 
+.job-box h6 {
+    margin-top:35px;
+}
+
 .history {
     background:$softBlack;
     padding:0 150px;
@@ -193,8 +204,12 @@ button a {
 .history-box {
     width:20%;
     border-right:1px solid #2b3c52;
+    h5 {
+        font-size: 1.6rem;
+    }
     img {
         margin-top:50px;
+        max-height:40px;
     }
 }
 
@@ -217,13 +232,13 @@ button a {
 }
 
 .latestProject p:first-of-type {
-    width:75%;
+    width:60%;
     float: left;
 }
 
-.more {
-    width:25%;
-    float: left;
+.latestProject button {
+    margin-top:50px;
+    margin-left:100px;
 }
 
 .project-gallery {
@@ -232,7 +247,7 @@ button a {
     flex-wrap: wrap;
     justify-content: space-between;
     margin-bottom:170px;
-    margin-top:65px;
+    margin-top:35px;
 }
 
 .gallery-item {
@@ -300,13 +315,13 @@ button a {
 }
 
 .blog-words {
-    border:1px solid green;
     width:70%;
     float: left;
 }
 
-.blog-words .more {
-    width:30%;
+#blog button {
+    margin-top:50px;
+    margin-left:100px;
 }
 
 .blog-gallery {
@@ -314,7 +329,7 @@ button a {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin:150px 0;
+    margin:50px 0;
 }
 
 .blog-item {
@@ -357,10 +372,12 @@ button a {
 .partnerLogo {
     background: $mainBlue;
     padding:50px 0;
+    margin-top:100px;
     .wrapper {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        margin-bottom:50px;
         img {
             width:20%;
             max-height:30px;
