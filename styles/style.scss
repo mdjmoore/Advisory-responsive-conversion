@@ -54,6 +54,7 @@ button.help {
 .weHelp-main,
 .weHelp aside {
     float: left;
+    margin-top:50px;
 }
 
 .weHelp-main {
@@ -62,7 +63,7 @@ button.help {
 }
 
 .weHelp aside {
-    width:calc(25% - 43px);
+    max-width:calc(25% - 43px);
     margin-left:43px;
     background: $backgroundGrey;
     border-right:1px solid $mainBlue;
@@ -72,7 +73,7 @@ button.help {
 button.readMore  {
     background-color: $mainBlue;
     border:none;
-    width:215px;
+    width:160px;
     height: 50px;
     letter-spacing: 2px;
 }
@@ -90,7 +91,9 @@ button a {
     background: $backgroundGrey url(../assets/ellipses2.png) bottom right no-repeat;
     clear: both;
     padding-top:100px;
-    margin-bottom:100px;
+    padding-bottom:100px;
+    margin-bottom: 100px;
+
 }
 
 .heading {
@@ -115,11 +118,12 @@ button a {
 .gallery {
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     justify-content: space-between;
 }
 
 .gallery-box {
-    width:calc(35% - 30px);
+    max-width:calc(35% - 30px);
     background: white;
     margin-bottom:15px;
     text-align: center;
@@ -173,7 +177,7 @@ button a {
 .job-box {
     width:30%;
     border:1px solid $backgroundGrey;
-    padding:20px;
+    padding:30px;
 }
 
 .job-box:nth-of-type(2) {
@@ -238,7 +242,7 @@ button a {
 
 .latestProject button {
     margin-top:50px;
-    margin-left:100px;
+    margin-left:350px;
 }
 
 .project-gallery {
@@ -267,8 +271,17 @@ button a {
 .testimonial .wrapper {
     display: flex;
     justify-content: space-between;
-    .testimonial-words {
+    .test-img {
         width:50%;
+        img {
+            max-height:100%;
+            width:100%;
+            
+        }
+    }
+    .testimonial-words {
+        min-width:40%;
+        margin-left:40px;
         text-align: center;
         font-size: 2.1rem;
         p {
@@ -321,7 +334,7 @@ button a {
 
 #blog button {
     margin-top:50px;
-    margin-left:100px;
+    margin-left:245px;
 }
 
 .blog-gallery {
@@ -352,7 +365,7 @@ button a {
     display: none;
     position: absolute;
     top: 0;
-    bottom: 198px;
+    bottom: 225px;
     right: 0;
     left: 0;
     background: rgba(25,125,255,0.7);

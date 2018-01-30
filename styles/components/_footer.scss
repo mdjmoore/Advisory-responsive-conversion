@@ -61,8 +61,11 @@ footer {
     }
 }
 
-input[type ="email"] {
+form {
     position: relative;
+}
+
+input[type ="email"] {
     background-color: #2e2c2c;
     border:none;
     padding:10px 40px;

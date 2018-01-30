@@ -179,7 +179,8 @@ a {
 
 p {
   color: #4b4b4b;
-  font-family: 'Source Sans Pro', sans-serif; }
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 30px; }
 
 .history-box h5 {
   color: white;
@@ -197,31 +198,35 @@ p {
   .nav-grey img, .nav-grey p {
     float: left;
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 20px;
     margin-left: 10px; }
+  .nav-grey p {
+    margin-top: 15px; }
 
 .nav-grey nav {
   float: right; }
 
 .nav-grey ul {
   list-style: none; }
+  .nav-grey ul a {
+    position: relative; }
+    .nav-grey ul a img {
+      position: absolute;
+      top: -20px;
+      left: -30px; }
   .nav-grey ul li {
     float: left;
     position: relative;
-    margin-bottom: 10px;
-    margin-left: 15px; }
+    margin: 10px 15px; }
 
 .sub-menu {
   background: #f5f5f5;
   position: absolute;
   top: 100%;
-  left: 0;
   display: none; }
-  .sub-menu ul {
-    padding: 0; }
-    .sub-menu ul li {
-      display: block;
-      margin: 0; }
+  .sub-menu li {
+    display: block;
+    font-size: 1.4rem; }
 
 nav li:hover .sub-menu,
 nav li a:focus .sub-menu {
@@ -238,6 +243,8 @@ nav li a:focus .sub-menu {
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -262,7 +269,7 @@ nav li a:focus .sub-menu {
 
 .mainOffice,
 .openTime {
-  width: 250px; }
+  max-width: 250px; }
   .mainOffice img,
   .openTime img {
     float: left; }
@@ -306,11 +313,12 @@ nav li a:focus .sub-menu {
       -webkit-box-align: center;
       -ms-flex-align: center;
       align-items: center; }
-      .nav-blue nav ul .fa-bars {
-        display: none; }
       .nav-blue nav ul li {
-        margin-right: 10px;
+        margin-right: 20px;
         font-size: 1.8rem; }
+
+.fa.fa-bars {
+  display: none; }
 
 .nav-blue a {
   color: white;
@@ -434,8 +442,10 @@ footer {
 .footer-item .advisory-logo p {
   margin-left: 55px; }
 
+form {
+  position: relative; }
+
 input[type="email"] {
-  position: relative;
   background-color: #2e2c2c;
   border: none;
   padding: 10px 40px;
@@ -480,36 +490,137 @@ footer .wrapper.bottom {
     margin-left: 5px; }
   .hero p {
     padding-top: 50px; }
+  #services .wrapper .gallery-box {
+    max-width: 49%; }
   .history .history-box {
     min-width: calc(50% - 70px);
     border: none; }
   .blog-item .overlay {
     bottom: 247px; }
+  .wrapper.foot {
+    padding-top: 70px; }
   .footer-item .pop {
     font-size: 1.4rem; }
   .footer-item .plane {
     left: 225px; } }
 
 @media (max-width: 768px) {
-  .nav-blue nav .dropdown {
-    position: relative; }
-    .nav-blue nav .dropdown:hover .submenu {
-      display: block; }
+  .nav-grey .wrapper nav {
+    float: left; }
+  .nav-grey .wrapper {
+    padding-left: 120px; }
+  .white-bar .consultation {
+    margin: 0 auto; }
   .nav-blue nav .submenu {
     position: absolute;
-    top: 30px;
+    top: 0;
     padding: 0;
     z-index: 2;
     background: #197dff;
-    display: block;
     display: none; }
     .nav-blue nav .submenu li {
       padding: 10px; }
   .nav-blue nav .fa-bars {
-    display: inline-block;
     margin-left: 10px; }
   .nav-blue nav .social a {
-    margin-left: 0; } }
+    margin-left: 0; }
+  .nav-blue .dropdown {
+    position: relative; }
+    .nav-blue .dropdown:hover > ul {
+      display: block; }
+  .weHelp-main {
+    padding-top: 20px;
+    min-width: 100%; }
+  .weHelp .wrapper aside {
+    min-width: 100%;
+    margin-top: 20px;
+    margin-left: 0px; }
+  .choose .wrapper .choose-words {
+    max-width: 100%; }
+  .choose .wrapper img {
+    display: none; }
+  .blog-item .overlay {
+    bottom: 275px; }
+  .footer-item .pop {
+    font-size: 1.2rem; }
+  .footer-item .plane {
+    left: 175px;
+    bottom: 0px; } }
+
+@media (max-width: 480px) {
+  .nav-grey .wrapper {
+    margin-left: 0; }
+    .nav-grey .wrapper nav {
+      margin-left: 0; }
+  .white-bar .consultation {
+    position: absolute;
+    left: 250px; }
+  .hero {
+    padding-bottom: 20px; }
+    .hero .wrapper h1 {
+      font-size: 5rem; }
+  #services .wrapper .gallery-box {
+    max-width: 100%; }
+  .jobs .wrapper .job-box {
+    width: 100%;
+    margin-bottom: 10px; }
+  .history .history-box {
+    width: 100%;
+    border-bottom: 1px solid #767676; }
+  .latestProject .wrapper p:first-of-type {
+    width: 100%; }
+  .latestProject button.help {
+    margin-top: 0;
+    margin-left: 0; }
+  .testimonial .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .testimonial .wrapper .testimonial-words {
+      width: 100%; }
+  #blog .wrapper .blog-words {
+    width: 100%; }
+  #blog .wrapper .help {
+    margin-left: 0;
+    margin-top: 0; }
+  #blog .wrapper .overlay {
+    bottom: 400px; }
+    #blog .wrapper .overlay i {
+      padding: 10px 30px; }
+  .partnerLogo .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .partnerLogo .wrapper img {
+      margin-bottom: 20px; }
+  footer .contact .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    padding-left: 100px; }
+  footer .wrapper.foot {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding-top: 200px; }
+    footer .wrapper.foot .footer-item {
+      width: 100%;
+      margin: 0; }
+      footer .wrapper.foot .footer-item .plane {
+        bottom: 0px; } }
 
 body {
   width: 100%; }
@@ -543,14 +654,15 @@ button.help {
 
 .weHelp-main,
 .weHelp aside {
-  float: left; }
+  float: left;
+  margin-top: 50px; }
 
 .weHelp-main {
   width: calc(75% - 43px);
   margin-right: 43px; }
 
 .weHelp aside {
-  width: calc(25% - 43px);
+  max-width: calc(25% - 43px);
   margin-left: 43px;
   background: #f5f5f5;
   border-right: 1px solid #197dff;
@@ -559,7 +671,7 @@ button.help {
 button.readMore {
   background-color: #197dff;
   border: none;
-  width: 215px;
+  width: 160px;
   height: 50px;
   letter-spacing: 2px; }
 
@@ -574,6 +686,7 @@ button a {
   background: #f5f5f5 url(../assets/ellipses2.png) bottom right no-repeat;
   clear: both;
   padding-top: 100px;
+  padding-bottom: 100px;
   margin-bottom: 100px; }
 
 .heading {
@@ -598,12 +711,16 @@ button a {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
 
 .gallery-box {
-  width: calc(35% - 30px);
+  max-width: calc(35% - 30px);
   background: white;
   margin-bottom: 15px;
   text-align: center;
@@ -652,7 +769,7 @@ button a {
 .job-box {
   width: 30%;
   border: 1px solid #f5f5f5;
-  padding: 20px; }
+  padding: 30px; }
 
 .job-box:nth-of-type(2) {
   border-left: 1px solid #197dff; }
@@ -712,7 +829,7 @@ button a {
 
 .latestProject button {
   margin-top: 50px;
-  margin-left: 100px; }
+  margin-left: 350px; }
 
 .project-gallery {
   clear: both;
@@ -745,8 +862,14 @@ button a {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between; }
+  .testimonial .wrapper .test-img {
+    width: 50%; }
+    .testimonial .wrapper .test-img img {
+      max-height: 100%;
+      width: 100%; }
   .testimonial .wrapper .testimonial-words {
-    width: 50%;
+    min-width: 40%;
+    margin-left: 40px;
     text-align: center;
     font-size: 2.1rem; }
     .testimonial .wrapper .testimonial-words p {
@@ -797,7 +920,7 @@ button a {
 
 #blog button {
   margin-top: 50px;
-  margin-left: 100px; }
+  margin-left: 245px; }
 
 .blog-gallery {
   clear: both;
@@ -827,7 +950,7 @@ button a {
   display: none;
   position: absolute;
   top: 0;
-  bottom: 198px;
+  bottom: 225px;
   right: 0;
   left: 0;
   background: rgba(25, 125, 255, 0.7);
