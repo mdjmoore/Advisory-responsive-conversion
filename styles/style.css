@@ -454,6 +454,12 @@ footer {
   .footer-item ul {
     list-style: none;
     padding: 0; }
+  .footer-item a {
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease; }
+  .footer-item a:hover {
+    color: #197dff; }
 
 .footer-item .advisory-logo img {
   float: left; }
@@ -482,7 +488,7 @@ button.plane {
   border: none;
   padding: 10px 30px;
   border-radius: 15px; }
-  button.plane:hover i {
+  button.plane:active i {
     -webkit-animation: fly 2s cubic-bezier(1, 0.02, 0.8, 0.33) 1;
     animation: fly 2s cubic-bezier(1, 0.02, 0.8, 0.33) 1;
     -webkit-animation-fill-mode: forward;
