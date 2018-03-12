@@ -351,6 +351,15 @@ nav li a:focus .sub-menu {
   left: 10px; }
 
 header .social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
   border-left: 1px solid white; }
   header .social li {
     margin-left: 20px; }
@@ -386,10 +395,10 @@ header .social {
     color: #197dff; }
 
 .arrowLeft {
-  left: 30px; }
+  left: 10px; }
 
 .arrowRight {
-  right: 30px; }
+  right: 10px; }
 
 .hero .expert {
   background-color: #197dff;
@@ -542,9 +551,11 @@ footer .wrapper.bottom {
     .bottom .social i:hover {
       color: #197dff; }
 
-@media (max-width: 940px) {
+@media (max-width: 990px) {
   .nav-blue .social li {
-    margin-left: 5px; }
+    margin-left: 5px; } }
+
+@media (max-width: 940px) {
   .consultation button {
     margin-left: 350px; }
   .hero p {
@@ -575,6 +586,12 @@ footer .wrapper.bottom {
     font-size: 1.4rem; }
   .footer-item .plane {
     left: 225px; } }
+
+@media (max-width: 900px) {
+  .nav-blue .social {
+    padding-left: 5px; }
+  li {
+    margin-left: 0px; } }
 
 @media (max-width: 768px) {
   .nav-grey .wrapper nav {
@@ -735,6 +752,7 @@ a {
   color: #197dff; }
 
 .wrapper {
+  position: relative;
   max-width: 1170px;
   width: 90%;
   margin: 0 auto;
@@ -751,6 +769,8 @@ a {
     color: black; }
 
 button.help {
+  position: absolute;
+  right: 0;
   background: transparent;
   border: none;
   color: #197dff; }
@@ -937,7 +957,7 @@ button a {
 
 .latestProject button {
   margin-top: 50px;
-  margin-left: 350px; }
+  margin-left: 0px; }
 
 .project-gallery {
   clear: both;

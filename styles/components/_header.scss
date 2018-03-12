@@ -170,6 +170,9 @@ nav li a:focus .sub-menu {
 }
 
 header .social {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
     border-left:1px solid white;
     li {
     margin-left:20px;
@@ -205,11 +208,11 @@ header .social {
 }
 
 .arrowLeft {
-    left:30px;
+    left:10px;
 }
 
 .arrowRight {
-    right:30px;
+    right:10px;
 }
 
 .hero .expert  {

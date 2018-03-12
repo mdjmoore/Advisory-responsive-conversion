@@ -1,8 +1,10 @@
-@media (max-width:940px) {
+@media (max-width:990px) {
     .nav-blue .social li {
         margin-left:5px;
     }
+}
 
+@media (max-width:940px) {
     .consultation button {
         margin-left:350px;
     }
@@ -56,6 +58,15 @@
         .plane {
         left:225px;
         }
+    }
+}
+
+@media (max-width:900px) {
+    .nav-blue .social{
+        padding-left: 5px;
+    }
+         li {
+        margin-left:0px;
     }
 }
 
